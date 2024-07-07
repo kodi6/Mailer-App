@@ -15,8 +15,8 @@ defmodule MailerAppWeb.SendMailLive.Index do
   def handle_event("send", _params, socket) do
     email =
       new()
-      |> to("sender@gmail.com")
-      |> from("receiver@gmail.com")
+      |> to("receiver@gmail.com")
+      |> from("sender@gmail.com")
       |> subject("Welcome to Our Phoenix App!")
       |> html_body("<h1>Welcome!</h1><p>Thank! you for joining our Phoenix app. We're excited to have you on board!</p>")
 
