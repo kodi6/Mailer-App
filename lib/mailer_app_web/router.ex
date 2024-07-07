@@ -18,6 +18,9 @@ defmodule MailerAppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    live "/send_mail", SendMailLive.Index, :index
+
   end
 
   # Other scopes may use custom stacks.
