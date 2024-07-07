@@ -29,7 +29,7 @@ config :mailer_app, MailerAppWeb.Endpoint,
 #
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
-config :mailer_app, MailerApp.Mailer, adapter: Swoosh.Adapters.Local
+config :mailer_app, MailerApp.Mailer, adapter: Swoosh.Adapters.Gmail
 
 # Configure esbuild (the version is required)
 config :esbuild,
